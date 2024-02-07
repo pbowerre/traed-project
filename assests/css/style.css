@@ -418,6 +418,7 @@ main{
     display: flex;
     align-items: center;
     gap: 10px;
+    
 }
 #traedlogo{
     width: 70px;
