@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Frontend Project</title>
+    <!-- font, icons and other stuff -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css" integrity="sha384-BY+fdrpOd3gfeRvTSMT+VUZmA728cfF9Z2G42xpaRkUGu2i3DyzpTURDo5A6CaLK" crossorigin="anonymous">
+    <!--Boostrap link for the page -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <!-- main style for the page -->
+    <link rel="stylesheet" href="assests/css/style.css">
+    <link rel="stylesheet" href="node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <script src="assests/js/main.js" defer></script>
+
+</head>
+    <!-- header section of the page -->
+    <div class="header container-fluid p-2">
+        <div class="row" style="position: relative;">
+            <div class="col-3  img-logo">
+                <img src="assests/imgs/Group.png" alt="Traed logo" class="imgs">
+            </div>
+           
+            <div class="col menus" id="nav-hold">
+                <ul class="nav menu d-flex justify-content-center align-items-center">
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Our Solutions</a></li>
+                    <li><a href="#">Sectors</a></li>
+                    <li><a href="#">Knowledge</a></li>
+                    <li><a href="#">Company</a></li>
+                    <button class="getstarted">Get Started</button>
+                </ul>
+            </div>
+            <div id="menu-hold">
+                <img src="assests/imgs/Menu.png" alt="icon" onclick="changeState()">
+            </div>
+        </div>
+    </div>
+
+    <!-- hero section of the page -->
+    <section id="hero" class="container-fluid  d-flex">
+        <section id="heros" class="container-fluid py-3 text-left">
+            <h3 class="display-5 fw-bold lh-5 banner-heading">Accounting, but make <br>it easy - withTraed!</h3>
+            <p class="mx-auto banner-text">Applications that power financial institutions, marketplaces that accelerate industry & an open <br>innovation platform for banks, fintechs & non-banks to connect and collaborate.</p>
+            <p class="action-button d-flex align-items-baseline">
+                <button>Get Started</button>
+                <button style="background: #fff; color: #000; display: none;" class="learns">Learn More</button>
+                <span>No credit card necessary, its free!</span>
+            </p>
+        </section>
+    </section>
+
+    <main>
+        <!-- about section  -->
+        <div class="container-fluid about d-flex align-items-center justify-contents-center flex-column">
+            <div class="row about-head d-flex justify-contents-center align-items-center flex-column">
+                <h2 class="col text-center w-40 about-title">
+                    Traed helps your business save time every day!
+                </h2>
+                <p class="col text-center about-content">
+                    Traed offers a simple and clear accounting software that can be used anywhere at any.
+                    This allows a maximum of flexibility and convenience for you and your customers.
+                </p>
+            </div>
+            <div class="row d-flex flex-rows about-inners">
+                <div class="col d-flex flex-column parent-first">
+                    <div class="first-sect">
+                        <h5 class="logos"><img src="assests/imgs/first-icon/div.png" alt="icon 1"></h5>
+                        <span>INVOICE DISCOUNTING</span>
+                        <p>a financing method where a business sells
+                            its unpaid invoices to a third party at a discount to access
+                            immediate each flow
+                        </p>
+                    </div>
+                    <div class="second-sect">
+                        <h5 class="logos"><img src="assests/imgs/first-icon/div (2).png" alt="icon 2"></h5>
+                        <span>DEALS MANAGING</span>
+                        <p>
+                            overseeing and optimizing various aspects of
+                            business transaactions, from negotiation and documentation to
+                            tracking and performance analysis
+                        </p>
+                    </div>
+                </div>
+                <div class="col iphone-sect">
+                    <span>BUSINESS MATCHMAKING</span>
+                    <p>
+                        a financial arrangement where a buyer facilitates
+                        early payments to their suppliers through a third-party
+                        financing provider
+                    </p>
+                    <img src="assests/imgs/iPhones.png" alt="iphone" id="iphone">
+                </div>
+                <div class="col d-flex flex-column parent-first">
+                    <div class="third-sect">
+                        <h5 class="logos"><img src="assests/imgs/first-icon/div (1).png" alt="icon 3"></h5>
+                        <span>FACTORING</span>
+                        <p>
+                            a financial service that allows businesses to sell their
+                            accounts unpaid invoices to a factoring company in exchange
+                            for last cash
+                        </p>
+                    </div>
+                    <div class="fourth-sect">
+                    <h5 class="logos"><img src="assests/imgs/first-icon/div (3).png" alt="icon 4"></h5>
+                        <span>REVERSE FACRTORING</span>
+                        <p>
+                            a financial arrangement where a buyer faciiitates early
+                            payments to their suppliers through a third party financing
+                            provider
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of the about section -->
+
+        <!-- steps section  starts here -->
+        <div class="container-fluid d-flex align-items-center justify-contents-center steps-section">
+            <div class="steps-hold d-flex flex-column align-items-center justify-contents-center">
+                <div class="steps-heading">
+                    <div class="row text-center">
+                        <h2>
+                            it's easy. So how is that <b>possible?</b>
+                        </h2>
+                    </div>
+                    <div class="row text-center d-flex align-items-center justify-contents-center">
+                        <p>Traed offers a simple and clear accounting software that can be used anywhere
+                            at any time. This allows a maximum of flexibility and convenience for you and
+                            your customers.
+                        </p>
+                    </div>
+                </div>
+                <div class="row card-holder d-flex align-items-center justify-contents-center">
+                    <div class="col card-image">
+                        <img src="assests/imgs/iphone 1.png" alt="first phone">
+                        <span>Step 1 - Setup your portal</span>
+                        <p>install or Register web portal of traed.ai by clicking on <br> <a href="#">Get
+                            Started button.</a> 
+                        </p>
+                    </div>
+                    <div class="col card-image">
+                        <img src="assests/imgs/iphone 2.png" alt="first phone">
+                        <span>Step 2 - Upload your legal docs</span>
+                        <p>Complete the simple onboarding for your company
+                            to get registered on traed.
+                        </p>
+                    </div>
+                    <div class="col card-image">
+                        <img src="assests/imgs/iphone 3.png" alt="first phone">
+
+                        <span>Step 3 - Onboard and enjoy</span>
+                        <p>That's with Start enjoying all features if traed platform to make accounting
+                            simple.
+                        </p>
+                    </div>
+                </div>
+                <div class="row text-center action-get">
+                    <a href="#">Get Started 
+                        <i class="bi bi-chevron-right"></i>
+                        <i class="bi bi-chevron-right"></i>
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- end of steps section` -->
+
+        <!-- main about us -->
+        <div class="container-fluid d-flex align-items-center justify-content-center about-main">
+            <div class="row about-inner">
+                <div class="col about-main-text">
+                    <h3>About Us</h3>
+                    <p>TraedAI is a trade finance platform that leverages cutting-edge
+                        AI and machine learning technology to provide innovative
+                    solutions to businesses looking to optimize their trade finance processes.
+                    </p>
+                </div>
+                <div class="col">
+                    <img src="assests/imgs/about.png" alt="about img">
+                </div>
+            </div>
+        </div>
+        <!-- end of about us -->
+
+        <!-- selling invoices -->
+        <div class="container-fluid selling-section  d-flex align-items-center justify-content-center">
+            <div class="row selling-inner">
+                <div class="col">
+                    <img src="assests/imgs/iphone.png" alt="iphone">
+                </div>
+                <div class="col selling-main-text">
+                    <h2>Sell invoices with traed's solutions</h2>
+                    <p>Sell your clains to traed and get your money immediately</p>
+                    <ul>
+                        <li><i class="logos"><img src="assests/imgs/fourth-icon/div (10).png" alt="icon 10"> </i>Fast and secure growth for your company</li>
+                        <li><i class="logos"><img src="assests/imgs/fourth-icon/div (11).png" alt="icon 11"> </i>Fast financing solutions</li>
+                        <li><i class="logos"><img src="assests/imgs/fourth-icon/div (12).png" alt="icon 12"> </i>Create realtime secured deals</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end of selling invoices -->
+
+        <!-- smart platform sections -->
+        <div class="container-fluid smart-section d-flex align-items-center justify-content-center">
+            <div class="row smart-inner">
+                <div class="col smart-main-text">
+                    <h2>Our Smart platform is flexible</h2>
+                    <p>Accounting doesn't has to be that complicated</p>
+                    <ul>
+                        <li><i class="logos"><img src="assests/imgs/second-icon/div (4).png" alt="icon 4"></i>Easy handling without previous knowledge</li>
+                        <li><i class="logos"><img src="assests/imgs/second-icon/div (5).png" alt="icon 5"></i>Access anywhere and anytime</li>
+                        <li><i class="logos"><img src="assests/imgs/second-icon/div (6).png" alt="icon 6"></i>24/7 Premium Customer Support</li>
+                    </ul>
+                </div>
+                <div class="col">
+                    <img src="assests/imgs/man.jfif" alt="man">
+                </div>
+            </div>
+        </div>
+        <!-- end of smart platform -->
+
+        <!-- choosing traed  -->
+        <div class="container-fluid choosing-section d-flex align-items-center justify-content-center">
+            <div class="row choosing-inner">
+                <div class="col">
+                    <img src="assests/imgs/laptop.png" alt="man">
+                </div>
+                <div class="col choosing-main-text">
+                    <h2>Why choosing traed for trade managements?</h2>
+                    <p>Create invoices, quotes & co. automatically with your new digital
+                        accounting software
+                    </p>
+                    <ul>
+                        <li><i class="logos"><img src="assests/imgs/third-icon/div (7).png" alt="icon 7"></i>Save valuable time</li>
+                        <li><i class="logos"><img src="assests/imgs/third-icon/div (8).png" alt="icon 8"></i>Keep the overview</li>
+                        <li><i class="logos"><img src="assests/imgs/third-icon/div (9).png" alt="icon 9"></i>Work flexibly in the cloud</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <!-- end of why  -->
+
+        <!-- opinions of users  -->
+        <div class="container-fluid opinion-section d-flex align-items-center justify-content-center flex-column">
+            <div class="row">
+                <h2>What Our users says</h2>
+            </div>
+            <div class="row opinion-inner">
+                <div class="col">
+                    <div class="user-message">
+                        <p>
+                            "Traed has been a game-changer for our business their
+                            factoring services have improved our cash flow, allowing
+                            us to focus on growth and exapnsion. i recommend Traed to any
+                            business looking for reliable financial solutions"
+                        </p>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-img">
+                            <h5><img src="assests/imgs/review.png" alt="review"></h5>
+                        </div>
+                        <div class="user-name">
+                            <span>JOHN CARTER</span><br>
+                            <span>ROLE. COMPANY</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="user-message">
+                        <p>
+                            "The Traed teams expertise in the industry is evident, and
+                            their commitment to our success is unmatched.
+                            We're grateful for their support and highly recommend
+                            their services"
+                        </p>
+                    </div>
+                    <div class="user-info">
+                        <div class="user-img">
+                            <h5><img src="assests/imgs/review.png" alt="review"></h5>
+                        </div>
+                        <div class="user-name">
+                            <span>JOHN CARTER</span><br>
+                            <span>ROLE. COMPANY</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end of opinion for users  -->
+
+        <!-- possibilities section  -->
+        <div class="container-fluid possible-section d-flex align-items-center justify-content-center">
+            <div class="row possible-inner">
+                <div class="col possible-main-text">
+                    <h2>Explore endless possibilities with Traed</h2>
+                    <p>Secure your seat today at traed. Enjoy early benefits
+                        by joining traed community now. We are providing simple solutions
+                        every successful company needs.
+                    </p>
+                    <button class="getstarted">Get Started</button>
+                </div>
+                <div class="col">
+                    <img src="assests/imgs/image 1156.png" alt="people">
+                </div>
+            </div>
+        </div>
+        <!-- end of possibilities  -->
+
+        <!-- frequent asked questions  -->
+        <div class="container-fluid frequent-section d-flex justify-content-center flex-column">
+            <div class="frequent-heading text-center">
+                <h2>Frequently Asked Questions</h2>
+                <p>Lorem ipsum dolor sit amet consecteteur adipiscing eli mattis sit phaselus
+                    molis sit adiquam sit nullan
+                </p>
+            </div>
+            <div class="row frequent-inner">
+                <div class="col">
+                    <span>How traed helps with invoice for selling goods or services oversea?</span>
+                </div>
+                <div class="col">
+                    <span>How you can convert your invoices into cash?</span>
+                    <ul>
+                        <li>Register with Traed.ai</li>
+                        <li>Introduce your company</li>
+                        <li>Add your buyer and get limits</li>
+                        <li>Upload invoices</li>
+                    </ul>
+                    <p>Get your cash in 48 hours once your Traed contract and Buyer's notice
+                        are signed
+                    </p>
+                </div>
+                <div class="col">
+                    <span>Do you provide ongoing support?</span>
+                </div>
+                <div class="col">
+                    <p>What is your wweb design process?</p>
+                </div>
+            </div>
+        </div>
+        <!-- end of frequently asked questions  -->
+
+        <!-- footer  -->
+        <div class="container-fluid d-flex align-items-center justify-content-center flex-column">
+            <div class="row footer-inner">
+                <div class="col">
+                    <h2><img src="assests/imgs/Group.png" alt="traed logo" id="traedlogo"></h2>
+                    <p>TraedAI is a trade finance platform That uses AI and machine 
+                        learning technology to provide innovative solutions to
+                        businesses looking to optimize their trade finance processes.
+                    </p>
+                </div>
+                <div class="col  d-flex " id="breakers">
+                    <div class="col">
+                        <h5>About us</h5>
+                        <ul>
+                            <li><a href="#">Home</a></li>
+                            <li><a href="/aboutus">Product</a></li>
+                            <li><a href="/contactus">Services</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col">
+                        <h5>Contact Us</h5>
+                        <ul>
+                            <li><a href="#">Information</a></li>
+                            <li><a href="#">Request a quote</a></li>
+                            <li><a href="#">Consultation</a></li>
+                            <li><a href="#">Help center</a></li>
+                            <li><a href="#">Terms and conditions</a></li>
+                        </ul>
+                    </div>
+                </div>
+               
+            </div>
+        </div>
+        <div class="container-fluid p-0 text-center foot w-100">
+            <p>Copyright <a href="#">&copy;2022 Traed LTD</a> | All Rights Reserved
+            | <a href="#">Terms and Conditions</a> | <a href="#">Privacy Policy</a></p>
+        </div>
+    </main>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+</html>

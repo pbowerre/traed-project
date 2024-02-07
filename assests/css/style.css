@@ -1,0 +1,429 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --header-background: rgba(12, 32, 39, 1);
+    --hover-color: rgba(240, 101, 35, 1);
+    --button-color: rgba(6, 186, 99, 1);
+    --banner-color: rgba(12, 32, 39, 1);
+    --transparent-bg: rgba(126, 134, 147, 0.1);
+    --text-color: #ffffff;
+}
+body{
+    overflow-x: hidden;
+}
+a{
+    color: var(--text-color);
+}
+.header{
+    background: var(--header-background);
+    /* position: relative; */
+    z-index: -1;
+    padding: 10px;
+}
+#menu-hold img{
+    display: none;
+    z-index: 9999999;
+    position: absolute;
+    right: 20px;
+    top: 5px;
+    cursor: pointer;
+}
+.header .img-logo img{
+    width: 85px;
+    height: 30px;
+}
+/* .header .menus{
+    visibility: visible;
+} */
+.header .menu{
+    list-style-type: none;
+    gap: 15px;
+    display: block;
+}
+.header .menu li a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+.header .menu .getstarted{
+    border: none;
+    padding: 5px 15px;
+    border-radius: 5px;
+    color: var(--text-color);
+    background: var(--button-color);
+}
+#hero{
+    height: 100vh;
+    background-image: url(/assests/imgs/hero.jfif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center right;
+    align-items: center;
+}
+#hero #heros .banner-heading{
+    color: var(--header-background);
+}
+#hero #heros .banner-text{
+    font-size: 14px;
+}
+#hero #heros .action-button{
+    gap: 30px;
+}
+#hero #heros .action-button button{
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: var(--text-color);
+    background: var(--button-color);
+}
+#hero #heros .action-button span{
+    font-size: 12px;
+}
+main{
+    background: var(--header-background);
+    color: var(--text-color);
+}
+.about{
+    gap: 40px;
+    padding: 30px;
+}
+.about-head h2{
+    width: 50%;
+}
+.about-head p{
+    width: 80%;
+}
+.about .parent-first{
+    gap: 30px;
+}
+.about .parent-first div{
+    background-color: var(--transparent-bg);
+    border-radius: 20px;
+    padding: 20px;
+}
+.about .parent-first div p{
+    font-size: 15px;
+    text-align: justify;
+}
+.about .iphone-sect{
+    border-radius: 40px;
+    padding: 20px;
+    background: linear-gradient(180deg, #0000006d, #00000036), url('/assests/imgs/iphone-img.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom center;
+    overflow: hidden;
+    position: relative;
+}
+.about .iphone-sect #iphone{
+    position: absolute;
+    width: 280px;
+    bottom: -20px;
+    right: 0;
+}
+.steps-section{
+    padding: 30px;
+}
+.steps-section .steps-hold{
+    gap:10px;
+}
+.steps-section .steps-hold .steps-heading{
+    padding: 30px;
+}
+.steps-section .steps-hold .card-holder{
+    padding: 30px;
+    gap: 20px;
+    text-align: justify;
+}
+.steps-section .steps-hold .card-holder span{
+    color: var(--button-color);
+    font-weight: bold;
+}
+.steps-section .steps-hold .card-holder .card-image{
+    display: flex;
+    flex-direction: column;
+    background: var(--transparent-bg);
+    padding: 10px;
+    border-radius: 20px;
+}
+.steps-section .steps-hold .card-holder .card-image img{
+   width: inherit;
+   margin-bottom: 10px;
+}
+.steps-section .steps-hold .action-get a{
+    text-decoration: none;
+    color: var(--text-color);
+    padding: 3px;
+}
+.steps-section .steps-hold .action-get a:hover{
+    border-bottom: 1px solid #fff;
+}
+.steps-section .steps-hold .action-get a i{
+    font-size: 10px;
+    letter-spacing: -8px;
+}
+
+.about-main{
+    padding: 30px;
+    gap: 20px;
+}
+.about-main .about-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 30px;
+}
+.about-main .about-inner img{
+    width: inherit;
+}
+.about-main .about-inner .about-main-text{
+    align-self: center;
+}
+
+.selling-section{
+    padding: 30px;
+    gap: 20px;
+}
+.selling-section .selling-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10px;
+}
+.selling-section .selling-inner img{
+    width: inherit;
+}
+.selling-section .selling-inner .selling-main-text{
+    align-self: center;
+}
+.selling-section .selling-inner .selling-main-text ul li{
+    line-height: 50px;
+}
+
+.smart-section{
+    padding: 30px;
+    gap: 20px;
+}
+.smart-section .smart-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10px;
+}
+.smart-section .smart-inner img{
+    width: inherit;
+    /* height: 80%; */
+    object-fit: cover;
+    border-radius: 8px;
+}
+.smart-section .smart-inner .smart-main-text{
+    align-self:center;
+    line-height: 50px;
+}
+.choosing-section{
+    padding: 30px;
+    gap: 20px;
+}
+.choosing-section .choosing-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10px;
+}
+.choosing-section .choosing-inner img{
+    width: inherit;
+}
+.choosing-section .choosing-inner .choosing-main-text{
+    align-self: center;
+}
+.choosing-section .choosing-inner .choosing-main-text ul li{
+    line-height: 50px;
+}
+.opinion-section{
+    padding: 30px;
+    gap: 20px;
+}
+.opinion-section .opinion-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10px;
+}
+.opinion-section .opinion-inner .col{
+    background: var(--transparent-bg);
+    border-radius: 40px;
+    padding: 30px;
+}
+.possible-section{
+    padding: 30px;
+    gap: 20px;
+    background: rgba(54, 69, 72, 1);
+}
+.possible-section .possible-inner{
+    display: flex;
+    flex-direction: row;
+    padding: 30px;
+    gap: 10px;
+}
+.possible-section div img{
+    width: inherit;
+}
+.possible-section .possible-inner .possible-main-text{
+    align-self: center;
+}
+.possible-section .possible-inner .possible-main-text button{
+    border: none;
+    color: var(--text-color);
+    border-radius: 10px;
+    background-color: var(--button-color);
+    padding: 10px 15px;
+}
+.frequent-section{
+    padding: 30px;
+    gap: 20px;
+}
+.frequent-section .frequent-inner{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 40px;
+}
+.frequent-section .frequent-inner .col{
+    border: 1px solid var(--text-color);
+    padding: 10px;
+    border-radius: 5px;
+    align-items: center;
+}
+.footer-inner{
+    padding: 40px;
+    /* border: 2px solid  var(--text-color); */
+    display: flex;
+    justify-content: space-around;
+    line-height: 40px;
+    font-size: 14px;
+}
+.footer-inner .col a{
+    text-decoration: none;
+}
+.footer-inner .col ul li{
+    list-style-type: none;
+}
+.foot{
+    border: 1px solid var(--header-background);
+}
+
+/* media queries  */
+@media screen and (max-width: 734px) {
+    .menus{
+    position: fixed;
+    background-color: rgba(0, 0, 0, 0.863);
+    height: 100vh;
+    z-index: 1;
+    transition: display 0.3s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    inset: 0;
+    visibility: hidden;
+}
+.menus .menu{
+    flex-direction: column;
+    /* display: none; */
+ }
+ #menu-hold img{
+    display: block;
+}
+}
+@media screen and (max-width: 768px) {
+    .about .about-inners{
+        flex-direction: column;
+    }
+    .card-holder{
+        flex-direction: column;
+    }
+    .about-main .about-inner{
+        flex-direction: column;
+    }
+    .selling-section .selling-inner{
+        flex-direction: column;
+    }
+    .smart-section .smart-inner{
+        flex-direction: column;
+    }
+    .choosing-section .choosing-inner{
+        flex-direction: column;
+    }
+    .opinion-section .opinion-inner{
+        flex-direction: column;
+    }
+    .possible-section .possible-inner{
+        flex-direction: column;
+    }
+    .footer-inner{
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 675px) {
+    #hero{
+        background: linear-gradient(#ffffff2b, #ffffff3d), url(/assests/imgs/hero.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center right;
+        font-weight: bold;
+    }
+}
+@media screen and (max-width: 401px) {
+    #hero{
+        background: linear-gradient(#ffffff2b, #ffffff3d), url(/assests/imgs/hero.jfif);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: right;
+        font-weight: bold;
+    }
+    .action-button{
+        flex-direction: column;
+    }
+    .action-button button{
+        width: 100%;
+    }
+   #heros .action-button .learns{
+        display: block;
+    }
+    .footer-inner #breakers{
+        flex-direction: column;
+    }
+}
+.first-sect .logos img,
+.second-sect .logos img,
+.third-sect .logos img,
+.fourth-sect .logos img{
+    width: 50px;
+    height: 50px;
+}
+.selling-main-text ul .logos img,
+.smart-main-text ul .logos img,
+.choosing-main-text ul .logos img
+{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+.user-info .user-img h5 img{
+    border-radius: 50%;
+}
+.user-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+#traedlogo{
+    width: 70px;
+}
+@media screen and (max-width: 412px) {
+    main div{
+        padding: 10px;
+    }
+}
