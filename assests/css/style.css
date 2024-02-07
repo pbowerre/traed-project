@@ -32,8 +32,8 @@ a{
     cursor: pointer;
 }
 .header .img-logo img{
-    width: 85px;
-    height: 30px;
+    width: 120px;
+    height: 40px;
 }
 /* .header .menus{
     visibility: visible;
@@ -42,10 +42,17 @@ a{
     list-style-type: none;
     gap: 15px;
     display: block;
+    justify-content:end;
+    padding: 10px;
 }
 .header .menu li a{
     text-decoration: none;
     color: var(--text-color);
+    /* font-weight: bold; */
+    font-size: 20px;
+}
+.header .menu li:nth-child(2) a{
+    color: var(--hover-color);
 }
 .header .menu .getstarted{
     border: none;
@@ -61,12 +68,17 @@ a{
     background-size: cover;
     background-position: center right;
     align-items: center;
+    /* line-height: 43px; */
 }
 #hero #heros .banner-heading{
     color: var(--header-background);
+    font-size: 40px;
+    margin-bottom: 10px;
 }
 #hero #heros .banner-text{
-    font-size: 14px;
+    font-size: 19px;
+    font-weight: bold;
+    color: #000;
 }
 #hero #heros .action-button{
     gap: 30px;
@@ -79,7 +91,7 @@ a{
     background: var(--button-color);
 }
 #hero #heros .action-button span{
-    font-size: 12px;
+    font-size: 14px;
 }
 main{
     background: var(--header-background);
@@ -108,21 +120,28 @@ main{
     text-align: justify;
 }
 .about .iphone-sect{
-    border-radius: 40px;
+    border-radius: 20px;
     /* height: 100%; */
-    padding: 20px;
-    background: linear-gradient(180deg, #0000006d, #00000036), url('https://s3-alpha-sig.figma.com/img/30d7/3aac/56bc9167ef14613cf4367a4f51d08ee0?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fTt3RsaVgEhX4hCkz9FwHuRsi0h41oVoy2HMJVwt8loeSTLe8Byh9XDDNPS~OJ51qv2SbyqyIinr4T1pQNRovHI3UoWXyVnlbUpVMhmO3QecBoFjfb9spBih2-xxeHyZtb3eo6eSRHPk7hhRSL9~WBENHvDUmANjFB6XJHFb313of4pJ-JJVojs7bRI7WCs~M9sMbCRthb2zpYKPhbhtxugDK1u5z4mK-i1bk9TUOuTsDe4aHCrQsVnA5Lc3g1zod5JYC-RCJUQWKo8gH2Hg~rl-9D~2xgZBNWkTlQcjPGpn~tAig7A8L-UlmeYyEudFtXTiHcrlc9MzfqWkjSQIeQ__');
+    /* width: 250px; */
+    padding: 25px;
+    background: linear-gradient(180deg, #0000008c, #00000066), url('https://s3-alpha-sig.figma.com/img/30d7/3aac/56bc9167ef14613cf4367a4f51d08ee0?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fTt3RsaVgEhX4hCkz9FwHuRsi0h41oVoy2HMJVwt8loeSTLe8Byh9XDDNPS~OJ51qv2SbyqyIinr4T1pQNRovHI3UoWXyVnlbUpVMhmO3QecBoFjfb9spBih2-xxeHyZtb3eo6eSRHPk7hhRSL9~WBENHvDUmANjFB6XJHFb313of4pJ-JJVojs7bRI7WCs~M9sMbCRthb2zpYKPhbhtxugDK1u5z4mK-i1bk9TUOuTsDe4aHCrQsVnA5Lc3g1zod5JYC-RCJUQWKo8gH2Hg~rl-9D~2xgZBNWkTlQcjPGpn~tAig7A8L-UlmeYyEudFtXTiHcrlc9MzfqWkjSQIeQ__');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: bottom center;
     overflow: hidden;
     position: relative;
+    margin: 10px 0;
+    object-fit: cover;
+}
+.about .iphone-sect p{
+    z-index: 2;
 }
 .about .iphone-sect #iphone{
     position: absolute;
-    width: 280px;
-    bottom: -20px;
+    width: 270px;
+    bottom: -25px;
     right: 0;
+    /* z-index: -1; */
 }
 .steps-section{
     padding: 30px;
@@ -316,7 +335,7 @@ main{
 }
 
 /* media queries  */
-@media screen and (max-width: 734px) {
+@media screen and (max-width: 850px) {
     .menus{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.863);
@@ -367,6 +386,14 @@ main{
     }
 }
 
+@media screen and (max-width: 560px) {
+    .action-button button{
+        width: 100%;
+    }
+    .action-button{
+        flex-direction: column;
+    }
+}
 @media screen and (max-width: 675px) {
     #hero{
         background: linear-gradient(#ffffff2b, #ffffff3d), url(/assests/imgs/hero.jfif);
@@ -384,12 +411,7 @@ main{
         background-position: right;
         font-weight: bold;
     }
-    .action-button{
-        flex-direction: column;
-    }
-    .action-button button{
-        width: 100%;
-    }
+   
    #heros .action-button .learns{
         display: block;
     }
