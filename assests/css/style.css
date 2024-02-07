@@ -393,8 +393,8 @@ main{
     .action-button{
         flex-direction: column;
     }
-    #heros .banner-heading{
-        color: var(--text-color)
+    #hero #heros .banner-heading, #hero #heros .banner-text{
+        color: var(--text-color);
     }
 }
 @media screen and (max-width: 675px) {
