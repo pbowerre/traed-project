@@ -109,6 +109,7 @@ main{
 }
 .about .iphone-sect{
     border-radius: 40px;
+    width: 50vw;
     padding: 20px;
     background: linear-gradient(180deg, #0000006d, #00000036), url('https://s3-alpha-sig.figma.com/img/30d7/3aac/56bc9167ef14613cf4367a4f51d08ee0?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fTt3RsaVgEhX4hCkz9FwHuRsi0h41oVoy2HMJVwt8loeSTLe8Byh9XDDNPS~OJ51qv2SbyqyIinr4T1pQNRovHI3UoWXyVnlbUpVMhmO3QecBoFjfb9spBih2-xxeHyZtb3eo6eSRHPk7hhRSL9~WBENHvDUmANjFB6XJHFb313of4pJ-JJVojs7bRI7WCs~M9sMbCRthb2zpYKPhbhtxugDK1u5z4mK-i1bk9TUOuTsDe4aHCrQsVnA5Lc3g1zod5JYC-RCJUQWKo8gH2Hg~rl-9D~2xgZBNWkTlQcjPGpn~tAig7A8L-UlmeYyEudFtXTiHcrlc9MzfqWkjSQIeQ__');
     background-repeat: no-repeat;
