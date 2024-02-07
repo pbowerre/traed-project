@@ -393,6 +393,9 @@ main{
     .action-button{
         flex-direction: column;
     }
+    #heros .banner-heading{
+        color: var(--text-color)
+    }
 }
 @media screen and (max-width: 675px) {
     #hero{
