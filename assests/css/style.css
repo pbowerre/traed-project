@@ -56,7 +56,7 @@ a{
 }
 #hero{
     height: 100vh;
-    background-image: url(/assests/imgs/hero.jfif);
+    background-image: url("https://s3-alpha-sig.figma.com/img/d18e/e01c/1e37a2e6b372b2087e0295479e2d4826?Expires=1708300800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=COfceP9cSdDaPt4lSYnvINXbWKwAyCPfQ2XtFTp0Lku7R8We7-DDO569apc27STirZUjyw6AskL9zAhu6nWDod1h8yW9lsHEW5VLy4U56sek7PDs~4NLWJnOMx8lce6bMRKRi-~o4-Np8qLm0p0hiJyfcjYb3iTLtg-RbuzwvCUNO7B-716Wd2Hwl6XBfdphSUSCWQwIvBX4R9OW2O8-T1Fe2wbeYAMUi2lMh6YVBp0CDFHf6xqwVQhTrHERUn0pr3UN1rnmB4VEXr5PbkAUF0gZXTCHq4oY9UaHHBpsREo1F4R0yBS54k79wyCwAQGQnDQg9c7NOGWgAwVuTlr3OA__");
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center right;
